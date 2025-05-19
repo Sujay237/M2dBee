@@ -3,7 +3,7 @@ import React, { createContext, useContext, useState, useEffect } from "react";
 const MovieContext = createContext();
 
 export const MovieProvider = ({ children }) => {
-  const MOVIE_DB_API_KEY = "cb6880b44b0babc8471884ed9d653463";
+  const MOVIE_DB_API_KEY = "YOUR_API_KEY";
   const [movies, setMovies] = useState([]);
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState("");
